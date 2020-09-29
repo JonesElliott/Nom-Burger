@@ -22,8 +22,14 @@ var orm = {
     },
 
     // Update burger to set devoured = true
-    updateOne: function() {
-        
+    updateOne: function(value, response) {
+        var queryString = "UDPATE burgers SET burgers.devoured = false WHERE burgers.burger_name = ";
+        queryString += value + ";";
+
+        connection.query(queryString, function(error, result) {
+            if(error) throw error;
+            response(result);
+        });
     }
 }
 
