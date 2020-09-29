@@ -15,8 +15,12 @@ var burger = {
         });
     },
 
-    
-
+    // Update burger to devoured
+    update: function(value, response) {
+        orm.updateOne(value, function(response) {
+            response(result);
+        });
+    }
 }
 
 module.exports = burger;
