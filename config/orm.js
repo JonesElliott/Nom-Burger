@@ -33,7 +33,5 @@ var orm = {
     }
 }
 
-
-
 // Export orm modules
 module.exports = orm;
