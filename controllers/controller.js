@@ -13,6 +13,11 @@ router.get("/", function(request, response) {
     });
 });
 
+router.post("/api/burgers", function(request, response) {
+    burger.create(req.body.burger_name, function(result) {
+        response.json({ id: result.insertId });
+    });
+});
 
 
 
