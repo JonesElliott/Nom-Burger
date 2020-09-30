@@ -8,16 +8,16 @@ var burger = {
         });
     },
 
-    // Create burger in burgers table
-    create: function(value, response) {
-        orm.insertOne("burgers", value, function(result) {
-            response(result);
+
+    create: function(cols, vals, callBack) {
+        orm.insertOne("burgers", cols, vals, function(res) {
+          callBack(res);
         });
     },
 
     // Update burger to devoured
     update: function(value, response) {
-        orm.updateOne(value, function(response) {
+        orm.updateOne(value, function(result) {
             response(result);
         });
     }

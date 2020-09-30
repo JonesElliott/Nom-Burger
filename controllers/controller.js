@@ -13,19 +13,15 @@ router.get("/", function(request, response) {
     });
 });
 
-router.post("/api/burgers", function(request, response) {
-    burger.create(req.body.burger_name, function(result) {
-        response.json({ id: result.insertId });
+router.post("/api/burgers", function(req, res) {
+    burger.create(
+      ["burger_name", "devoured"],
+      [req.body.burger_name, req.body.devoured],
+      function(result) {
+      // Send back the ID of the new quote
+      res.json({ id: result.insertId });
     });
 });
-
-
-
-
-
-
-
-
 
 // Export routes for server.js to use.
 module.exports = router;
