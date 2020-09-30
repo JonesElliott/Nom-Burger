@@ -9,9 +9,9 @@ var burger = {
     },
 
 
-    create: function(cols, vals, callBack) {
-        orm.insertOne("burgers", cols, vals, function(res) {
-          callBack(res);
+    create: function(cols, vals, response) {
+        orm.insertOne("burgers", cols, vals, function(result) {
+          response(result);
         });
     },
 
