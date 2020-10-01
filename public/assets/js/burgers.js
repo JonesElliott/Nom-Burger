@@ -6,6 +6,8 @@ $(function() {
   $("#submit-button").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+    
+    var newBurgerName = $("#burger-name").val().trim();
 
     var newBurger = {
       burger_name: $("#burger-name").val().trim(),

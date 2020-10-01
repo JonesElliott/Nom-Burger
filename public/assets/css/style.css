@@ -1,0 +1,90 @@
+body {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.burger-title {
+    font-family: 'Rock Salt', cursive;
+}
+
+.burger-img-div {
+    margin-bottom: 50px;
+}
+
+.burger-container {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid rgb(135, 47, 47);
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+}
+
+.new-burgers {
+
+}
+
+.change-devoured {
+    float: right;
+    margin-right: 15px;
+    margin-top: 2px;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: limegreen;
+    border-width: 1px;
+    font-family: 'Amatic SC', cursive;
+    font-size: large;
+    font-weight: bold;
+}
+
+.change-devoured:hover {
+    background-color: lime;
+}
+
+.eaten-burgers {
+    
+}
+
+.burger-form {
+
+}
+
+li:before { content: '🍔'; margin-left: -20px; margin-right: 10px; } 
+
+li {
+    text-align: left;
+    padding: 5px;
+    padding-left: 50px;
+    margin: 5px;
+    width: 350px;
+    background: #f0d8b9;
+    /* background: #d4995b; */
+    border-radius: 25px;
+    list-style-type: none;
+    display:inline-block
+  }
+  
+  .label {
+    font-weight: bold;
+    /* font-size: x-large; */
+  }
+  
+  .create-form {
+    margin-top: 35px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  #submit-button {
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: limegreen;
+    border-width: 1px;
+  }
+  
+  #submit-button:hover {
+    background-color: lime;
+  }
