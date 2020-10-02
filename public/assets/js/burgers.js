@@ -9,22 +9,27 @@ $(function() {
     
     var newBurgerName = $("#burger-name").val().trim();
 
-    var newBurger = {
-      burger_name: $("#burger-name").val().trim(),
-      devoured: 0
-    };
+    if (newBurgerName === "") {
+      return;
+    } else {
 
-    // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newBurger
-    }).then(
-      function() {
-        console.log("created new Burger");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
+      var newBurger = {
+        burger_name: newBurgerName,
+        devoured: 0
+      };
+
+      // Send the POST request.
+      $.ajax("/api/burgers", {
+        type: "POST",
+        data: newBurger
+      }).then(
+        function() {
+          console.log("created new Burger");
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
+    }
   });
 
 
