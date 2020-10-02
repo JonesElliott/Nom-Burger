@@ -1,10 +1,10 @@
 {
   "name": "nom-burger",
   "version": "1.0.0",
-  "description": "Nom down dome burgers with Node, Express, MySQL, Handlebars, and a homemade ORM.",
+  "description": "Nom down some burgers with Node, Express, MySQL, Handlebars, and a homemade ORM.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

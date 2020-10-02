@@ -1,8 +1,8 @@
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Big Mac", TRUE);
+VALUES ("Big Mac-N-Cheese Burger", TRUE);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Tripple Whopper with Cheese", TRUE);
+VALUES ("Tripple Whoppa-Roni with Cheese", FALSE);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Clog-My-Veins Behemoth Burger", FALSE);
