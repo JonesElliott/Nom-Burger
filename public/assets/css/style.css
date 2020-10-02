@@ -12,15 +12,12 @@ body {
 }
 
 .burger-container {
-    column-count: 3;
-    column-gap: 40px;
     column-rule: 1px solid rgb(135, 47, 47);
     font-family: 'Amatic SC', cursive;
     font-size: x-large;
-}
-
-.new-burgers {
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
 }
 
 .change-devoured {

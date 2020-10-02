@@ -9,7 +9,8 @@ $(function() {
     
     var newBurgerName = $("#burger-name").val().trim();
 
-    if (newBurgerName === "") {
+    if (newBurgerName === "" || newBurgerName.length > 45) {
+      console.log('Invalid Entry:\nName Entered: ' + newBurgerName + '\nName Length: ' + newBurgerName.length);
       return;
     } else {
 
