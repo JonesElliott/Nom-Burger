@@ -1,6 +1,6 @@
 # Nom Burger
 
-[Deployed Site]()
+[Deployed Site](https://nameless-savannah-00585.herokuapp.com/)
 
 ![issue tracker badge](https://img.shields.io/github/issues/JonesElliott/Note-Taker?style=plastic) ![MIT license badge](https://img.shields.io/badge/License-MIT-green)
 
@@ -21,7 +21,7 @@ Enter a new burger name in the "Add A Burger" section. The new burger will be wr
 
 When thye page is loaded, a burger is created, or updated (devoured), an ajax request is made from the front end and is received by a controller which queries the database utilizing the respective SQL queries.
 
-![get started button example](./documentation/site-preview.png)
+![get started button example](./documentation/site-preview.PNG)
 
 ## Contributing
 
