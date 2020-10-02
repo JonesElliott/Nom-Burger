@@ -1,7 +1,7 @@
 var express = require("express");
 
 // Set port for Heroku & local
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3001;
 
 var app = express();
 
